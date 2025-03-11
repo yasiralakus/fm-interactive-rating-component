@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+
+li, summary { list-style: none;}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Overpass", sans-serif;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* hazır kodlarım */
+
+.selected {
+    background-color: #FC7614 !important;
+    color: #262E38 !important;
+}
+
+.full-page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #131518;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box {
+    padding: 32px 40px 32px 32px;
+    width: 412px;
+    height: 416px;
+    background-image: radial-gradient(#232a34, #181e27);
+    border-radius: 30px;
+    > h1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+    > p {
+        font-size: 15px;
+        line-height: 24px;
+        color: #969FAD;
+        margin-bottom: 24px;
+    }
+    > button {
+        background-color: #FC7614;
+        color: #131518;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        width: 100%;
+        padding: 15px;
+        border-radius: 22.5px;
+        border: none;
+        line-height: 1;
+    }
+}
+
+.icon-star {
+    background-color: #262E38;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    > button {
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        border: none;
+        background-color: #262E38;
+        color: #969FAD;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        cursor: pointer;
+        transition: all .2s;
+    }
+    > button:hover {
+        color: #262E38;
+        background-color: #fff;
+    }
+}
+
+.phone {
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.you-selected {
+    padding: 4px 19px;
+    background-color: #262E38;
+    border-radius: 22.5px;
+    width: 193px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    > p {
+        font-size: 15px;
+        color: #FC7614;
+        line-height: 24px;
+    }
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    > h1 {
+        font-size: 28px;
+        color: #fff;
+        font-weight: bold;
+    }
+    > p {
+        font-size: 15px;
+        line-height: 24px;
+        color: #969FAD;
+        text-align: center;
+    }
+}
