@@ -63,7 +63,8 @@ p, h1, h2, h3, h4, h5, h6 {
         font-size: 28px;
         font-weight: bold;
         color: #fff;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        line-height: 0.9;
     }
     > p {
         font-size: 15px;
@@ -93,7 +94,7 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 .btns {
@@ -122,6 +123,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .phone {
     margin: 0 auto;
     margin-bottom: 32px;
+    margin-top: 13px;
 }
 
 .you-selected {
@@ -154,5 +156,57 @@ p, h1, h2, h3, h4, h5, h6 {
         line-height: 24px;
         color: #969FAD;
         text-align: center;
+    }
+}
+
+@media (width < 470px) {
+
+    .full-page {
+        padding: 24px;
+    }
+
+    .main-box {
+        padding: 24px 22px 32px 24px;
+        height: 368px;
+        > h1 {
+            font-size: 24px;
+        }
+        > p {
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .icon-star {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 24px;
+        > img {
+            width: 13px;
+            height: 13px;
+        }
+    }
+
+    .btns {
+        margin-bottom: 24px;
+    }
+
+    .phone {
+        width: 144px;
+        margin-top: 10px;
+    }
+    
+    .you-selected {
+        font-size: 14px;
+    }
+
+    .thanks {
+        > h1 {
+            font-size: 24px;
+        }
+        > p {
+            font-size: 14px;
+            line-height: 22px;
+        }
     }
 }
